@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    android:id="@+id/cvFood"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:background="@drawable/recylerview_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="21sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="6dp"
+            android:layout_toEndOf="@+id/iv_food"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@+id/iv_food"
+            />
+
+        <TextView
+            android:id="@+id/tv_kalori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalori"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginStart="12dp"
+            android:layout_toRightOf="@+id/iv_food"
+            android:layout_below="@+id/tv_nama"
+            />
+
+        <ImageView
+            android:id="@+id/iv_food"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_person"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_kalori"
+            android:background="@drawable/roundcorner"
+            android:src="@drawable/ic_add"
+            android:layout_marginRight="6dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

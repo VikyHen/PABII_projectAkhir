@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".Activity.Fragment.ProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- LinearLayout pertama -->
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="#F0F2F0"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="52dp"
+                android:fontFamily="@font/always_in_my_heart"/>
+        </LinearLayout>
+
+        <!-- Gambar -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profil"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-50dp"
+            android:layout_below="@id/linear_layout_1"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_below="@id/linear_layout_1">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="32dp"
+                android:layout_below="@id/linear_layout_1"
+                >
+
+                <TextView
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Tentang Fit Pure"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fit Pure adalah aplikasi sehat yang menyediakan daftar makanan sehat dan menghitung kalori harian untuk membantu pengguna mencapai gaya hidup yang seimbang secara nutrisi."
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="12dp"
+                    android:textAlignment="textStart"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingMultiplier="1.5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Pembuat"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama \t\t\t\t\t\t: Viky Hendriko"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Npm \t\t\t\t\t\t\t: 2125250005"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas \t\t\t\t\t\t\t: IF4A"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Matakuliah \t: Pemrograman Aplikasi Bergerak \t\t\t\t\t\t\t\t\t\t\t\t\tII"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

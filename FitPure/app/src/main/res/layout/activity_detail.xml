@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailActivity"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Detail"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal"
+            android:textSize="52dp"
+            android:fontFamily="@font/always_in_my_heart"/>
+
+        <ImageView
+            android:id="@+id/iv_detail"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="DESKRIPSI"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Deskripsi"
+            android:textSize="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.5"
+            android:fontFamily="@font/montserrat_regular"
+            android:textAlignment="textStart"
+            android:justificationMode="inter_word"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KALORI"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"/>
+
+        <TextView
+            android:id="@+id/tv_kalori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Kalori"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@id/btn_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kandungan dan Manfaat"
+                android:textSize="18dp"
+                android:layout_toRightOf="@+id/btn_tambah"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="6dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_regular"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kandungan"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:padding="6dp"
+                android:fontFamily="@font/montserrat_regular"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="2.25"
+                android:layout_gravity="center"
+                android:padding="6dp"
+                android:fontFamily="@font/montserrat_regular"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manfaat"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="1.35"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:padding="6dp"
+                android:fontFamily="@font/montserrat_regular"
+                />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_manfaat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/list_manfaat"
+            tools:itemCount="2" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

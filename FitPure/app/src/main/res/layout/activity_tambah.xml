@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TambahActivity"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Makanan"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="52dp"
+            android:fontFamily="@font/always_in_my_heart"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Makanan">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_corner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="32dp"
+                android:inputType="textCapSentences"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--<EditText
+            android:id="@+id/et_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:hint="Gambar"
+            android:textSize="21sp"
+            android:background="@drawable/et_corner"
+            android:paddingStart="12dp"
+            android:padding="6dp"
+            android:layout_marginBottom="6dp"/>-->
+
+        <ImageView
+            android:id="@+id/iv_gambar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_image"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Pilih Gambar"
+            app:cornerRadius="16dp"
+            android:backgroundTint="#03A9F4"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_corner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:inputType="textCapSentences|textMultiLine"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_kalori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kalori">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_kalori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_corner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:inputType="textCapSentences"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="21sp"
+            android:padding="8dp"
+            android:text="SIMPAN"
+            app:cornerRadius="16dp"
+            android:backgroundTint="#03A9F4"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

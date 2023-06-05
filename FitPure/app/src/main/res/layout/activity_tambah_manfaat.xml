@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TambahManfaatActivity"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Kandungan"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="52dp"
+            android:fontFamily="@font/always_in_my_heart"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_kandungan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Kandungan">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_kandungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_corner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="32dp"
+                android:inputType="textCapSentences"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_manfaatKandungan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Manfaat">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_manfaatKandungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_corner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:inputType="textCapSentences|textMultiLine"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_jumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jumlah Kandungan">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_jumlah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_corner"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:inputType="textCapSentences"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="21sp"
+            android:padding="8dp"
+            android:text="SIMPAN"
+            app:cornerRadius="16dp"
+            android:backgroundTint="#03A9F4"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
